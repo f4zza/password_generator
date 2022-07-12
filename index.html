@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="pw-container">
+        <section class="pw-header">
+            <section class="pw">
+                <span id="pw">l823Zs78#Css09@</span>
+                <button id="copy">Copy</button>
+            </section>
+        </section>
+        <section class="pw-body">
+            <section class="form-control">
+                <label for="len">Password Length</label>
+                <input id="len" value="15" type="number" min="2" max="30" />
+            </section>
+            <section class="form-control">
+                <label for="upper">Contain Uppercase Letters</label>
+                <input id="upper" type="checkbox" />
+            </section>
+            <section class="form-control">
+                <label for="lower">Contain Lowercase Letters</label>
+                <input id="lower" type="checkbox" />
+            </section>
+            <section class="form-control">
+                <label for="number">Contain Numbers</label>
+                <input id="number" type="checkbox" />
+            </section>
+            <section class="form-control">
+                <label for="symbol">Contain Symbols</label>
+                <input id="symbol" type="checkbox" />
+            </section>
+            <button class="generate" id="generate">
+                Generate Password
+            </button>
+        </section>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
